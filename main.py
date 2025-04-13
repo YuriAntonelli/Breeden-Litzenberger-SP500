@@ -9,7 +9,8 @@ from utils import clean_opt_chain, implied_vol, compute_risk_neutral_pdf
 # -- Parameters
 date_strs = ['08-04-2025', '09-04-2025']
 maturity = datetime(2025, 5, 1)
-lower_strike = 5000
+# set a range of strikes with very dense data, in order to deal with data sparsity
+lower_strike = 5000 
 upper_strike = 6000
 skip_strike_parameter = 15
 
